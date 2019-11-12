@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  font-family: 'Open-Sans', 'sans-serif';
+}
+
+.nav-bar {
+  background-color: #ADCAD6;
+  color: white;
+  padding: 10px;
+  text-align: left;
+  max-width: 100vw;
+}
+
+.container {
+  text-align: center;
+  width: 70vw;
+}

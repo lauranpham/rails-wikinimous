@@ -1,12 +1,17 @@
-<h1>Articles#edit</h1>
-<p>Find me in app/views/articles/edit.html.erb</p>
+<h1>Edit Article</h1>
 
-<%= form_for(@task) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+<div class="form">
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+    <br>
 
-  <%= f.label :content %>
-  <%= f.text_field :content %>
+    <%= f.label :content %>
+    <%= f.text_field :content, class: 'form-control'%>
+    <br>
 
-  <%= f.submit %>
-<% end %>
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
+<%= link_to "Back", article_path(@article) %>

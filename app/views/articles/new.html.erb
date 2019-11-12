@@ -1,12 +1,19 @@
-<h1>Articles#new</h1>
-<p>Find me in app/views/articles/new.html.erb</p>
+<h1>New Article</h1>
 
-<%= form_for(@task) do |f| %>
-  <%= f.label :title %>
-  <%= f.text_field :title %>
+<div class="form">
+  <%= form_for(@article) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
 
-  <%= f.label :content %>
-  <%= f.text_field :content %>
+    <br>
 
-  <%= f.submit %>
-<% end %>
+    <%= f.label :content %>
+    <%= f.text_field :content, class: 'form-control'%>
+
+    <br>
+
+    <%= f.submit class: 'btn btn-primary' %>
+  <% end %>
+</div>
+
+<%= link_to "Back", articles_path %>
