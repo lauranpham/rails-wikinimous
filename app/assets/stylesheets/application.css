@@ -13,9 +13,8 @@
  *= require_tree .
  *= require_self
  */
-
 body {
-  font-family: 'Open-Sans', 'sans-serif';
+  font-family: 'Roboto Slab', serif !important;
 }
 
 .nav-bar {
